@@ -70,7 +70,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libaudiopreprocessing \
-    libaacwrapper \
     libaudio-resampler \
     libqcomvisualizer \
     libqcomvoiceprocessing \
