@@ -42,6 +42,7 @@
 
 # Ir
 /dev/peel_ir					u:object_r:lirc_device:s0
+/dev/spidev5\.1					u:object_r:lirc_device:s0
 
 # Location
 /data/vendor/location/xtra/socket_hal_xtra    u:object_r:location_socket:s0
