@@ -1,4 +1,5 @@
 # Dalvik/ART
+dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.madvise-random=true
 
 # Dex
