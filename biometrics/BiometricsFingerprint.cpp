@@ -19,6 +19,7 @@
 
 #include <hardware/hw_auth_token.h>
 
+#include <android-base/strings.h>
 #include <hardware/hardware.h>
 #include <hardware/fingerprint.h>
 #include "BiometricsFingerprint.h"
@@ -50,6 +51,8 @@ static const hw_module_info_t kHALModules[] = {
 
 using RequestStatus =
         android::hardware::biometrics::fingerprint::V2_1::RequestStatus;
+
+using ::android::base::StartsWith;
 
 BiometricsFingerprint *BiometricsFingerprint::sInstance = nullptr;
 
@@ -211,12 +214,18 @@ Return<RequestStatus> BiometricsFingerprint::setActiveGroup(uint32_t gid,
         ALOGE("Bad path length: %zd", storePath.size());
         return RequestStatus::SYS_EINVAL;
     }
-    if (access(storePath.c_str(), W_OK)) {
+    std::string mutableStorePath = storePath;
+    if (android::base::StartsWith(mutableStorePath, "/data/system/users/")) {
+        mutableStorePath = "/data/vendor_de/";
+        mutableStorePath +=
+            static_cast<std::string>(storePath).substr(strlen("/data/system/users/"));
+    }
+    if (access(mutableStorePath.c_str(), W_OK)) {
         return RequestStatus::SYS_EINVAL;
     }
 
     return ErrorFilter(mDevice->set_active_group(mDevice, gid,
-                                                    storePath.c_str()));
+                                                    mutableStorePath.c_str()));
 }
 
 Return<RequestStatus> BiometricsFingerprint::authenticate(uint64_t operationId,

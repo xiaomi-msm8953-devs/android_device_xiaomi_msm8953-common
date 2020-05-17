@@ -7,6 +7,7 @@ cc_defaults {
         "service.cpp",
     ],
     shared_libs: [
+        "libbase",
         "libcutils",
         "liblog",
         "libhidlbase",
