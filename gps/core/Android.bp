@@ -4,8 +4,6 @@ cc_library_shared {
     name: "libloc_core",
     vendor: true,
 
-    sanitize: GNSS_SANITIZE,
-
     shared_libs: [
         "liblog",
         "libutils",
