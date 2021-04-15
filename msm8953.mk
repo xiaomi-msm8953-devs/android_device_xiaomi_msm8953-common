@@ -350,7 +350,8 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi Display
 PRODUCT_PACKAGES += \
     libnl \
-    libstagefright_enc_common
+    libstagefright_enc_common \
+    libshim_wfdmmsink
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
