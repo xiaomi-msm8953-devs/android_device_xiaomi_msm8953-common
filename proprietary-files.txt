@@ -1,4 +1,5 @@
 # All unpinned blobs below are extracted from daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
+# nokia package version: Nokia/Deadpool_00WW/DPL_sprout:11/RKQ1.200928.002/00WW_3_140:user/release-keys, unless stated otherwise
 
 # ADSP
 vendor/bin/adsprpcd
@@ -406,37 +407,48 @@ vendor/lib64/libgcs.so
 vendor/lib64/liblistenjni.so
 vendor/lib64/liblistensoundmodel2.so
 
-# Media
-vendor/etc/seccomp_policy/mediacodec.policy
-vendor/lib/libI420colorconvert.so
-vendor/lib/libmmosal_proprietary.so
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxAlacDec.so
-vendor/lib/libOmxAlacDecSw.so
-vendor/lib/libOmxAmrDec.so
-vendor/lib/libOmxAmrwbplusDec.so
-vendor/lib/libOmxApeDec.so
-vendor/lib/libOmxApeDecSw.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libOmxVideoDSMode.so
-vendor/lib/libOmxWmaDec.so
--vendor/lib/libgpustats.so
-vendor/lib/libmm-color-convertor.so
-vendor/lib/libvqzip.so
-vendor/lib64/libI420colorconvert.so
-vendor/lib64/libOmxAacDec.so
-vendor/lib64/libOmxAlacDec.so
-vendor/lib64/libOmxAlacDecSw.so
-vendor/lib64/libOmxAmrDec.so
-vendor/lib64/libOmxAmrwbplusDec.so
-vendor/lib64/libOmxApeDec.so
-vendor/lib64/libOmxApeDecSw.so
-vendor/lib64/libOmxEvrcDec.so
-vendor/lib64/libOmxQcelp13Dec.so
-vendor/lib64/libOmxWmaDec.so
--vendor/lib64/libgpustats.so
-vendor/lib64/libmm-color-convertor.so
+# Media - from nokia
+lib/libFileMux.so|4e05cd5e9913311ad17543d204adcd6d60cc8754
+lib/libOmxMux.so|033f86f26c34c4ec715ee65b1a2cfbef467a1e61
+lib/libmmrtpdecoder.so|4a3bd07629225870ec74219c21932b11017f5686
+lib/libmmrtpencoder.so|7d3ef7c2c1e1f4a74497b8d577c5d96da0ed6d19
+lib64/libFileMux.so|901bdfe106d04863e3abfa36e1b6a366ccfe4246
+lib64/libOmxMux.so|fd74e3f31264f45911e79e45c29a8a438e303f74
+lib64/libmmrtpdecoder.so|de3308c17bae74c0f725dddd9f971f664c0fe2f5
+lib64/libmmrtpencoder.so|4384149256e8c8b4608f28021abde3eadf80bde8
+system_ext/lib/libmmosal.so|8c7f0a071f84ec2ac9522bf448cb902a3ece2405
+system_ext/lib/libmmparser_lite.so|f7ed21ea0de0de02741854d78518c977ef5763f5
+system_ext/lib64/libmmosal.so|ef19a38be8283c87eabe96f74bc8a71881ab1f0a
+system_ext/lib64/libmmparser_lite.so|c92a64786291bd6cd6b9c111e149633d07b5f3f1
+vendor/etc/seccomp_policy/mediacodec.policy|f1097f8e67ef20de89176cf2e9c4f5c91cb77897
+vendor/lib/libI420colorconvert.so|5a7726bbd8c7343e05d6251185fa72ed27b3da5c
+vendor/lib/libOmxAacDec.so|7c7ffe4f9ae9881b66ecde16bae36e9fb9a26676
+vendor/lib/libOmxAlacDec.so|268751eecd1d5ba42ae18e6a7c02377ae6ebd850
+vendor/lib/libOmxAlacDecSw.so|59055e1c00ed82f7c310dcf78d4104b9f803d12e
+vendor/lib/libOmxAmrDec.so|7779dfa49f65933afdd6b1efbe719b6afc8c9ccd
+vendor/lib/libOmxAmrwbplusDec.so|e253c2b068f0a3295796f9912d9906cc29b336d7
+vendor/lib/libOmxApeDec.so|052e5b93b034a8bb109e4b0ffccd6aa06c2b2bba
+vendor/lib/libOmxApeDecSw.so|076e4092433cf2422c71594c7f4a418f32408f56
+vendor/lib/libOmxEvrcDec.so|99202c934d1fdd1e428527019b7dc92dde40edc6
+vendor/lib/libOmxQcelp13Dec.so|4424762bcf639284112395b4c9d63cb58c799638
+vendor/lib/libOmxVideoDSMode.so|71c4f23de93e91931c077ed511301185152422da
+vendor/lib/libOmxWmaDec.so|c47e74a73afa486429c009f338779cd78566f77c
+vendor/lib/libmm-color-convertor.so|7e1536ab3926ece1da6c6a73cb5b1635f75762c7
+vendor/lib/libmmosal.so|e23d6d1b2a035c08ffd7ac72d5241ebff37f0d14
+vendor/lib/libvqzip.so|f85628ea634df1c31d69380d960ad7ea3396e7b2
+vendor/lib64/libI420colorconvert.so|e00f84027fb2628055310d26a4fc970434a60648
+vendor/lib64/libOmxAacDec.so|5d939a384e01caba6d1043dc94cb23a7eb116fe8
+vendor/lib64/libOmxAlacDec.so|77157cfa1580b85c8d5dfdff1b219ad4d870350d
+vendor/lib64/libOmxAlacDecSw.so|03514dfb643466d9532b1f02c1cfa31043fedeca
+vendor/lib64/libOmxAmrDec.so|f143c5cc4569f2e5ab255b8571b6ee65e0c53e35
+vendor/lib64/libOmxAmrwbplusDec.so|7ac422b718b5adb756efa69e41adacaee59f287a
+vendor/lib64/libOmxApeDec.so|6a18b3420d2b58047b83f68d117a012dce7110a4
+vendor/lib64/libOmxApeDecSw.so|cd6874e2be4bbddc74e70bad8acebc5a9dbcb355
+vendor/lib64/libOmxEvrcDec.so|67da9d405b33c9a1058ee2bcb12ea489f37d5961
+vendor/lib64/libOmxQcelp13Dec.so|842f2285c1eb76827a3b8bd0b574aee86ad1d1bd
+vendor/lib64/libOmxWmaDec.so|7e5dab018bbab16566315dcc61682a196a25f0ba
+vendor/lib64/libmm-color-convertor.so|26ed405a100be543e39e0720ce7ee49ce7148f49
+vendor/lib64/libmmosal.so|e9fdb48163e92b089cea0c397723a8416436c272
 
 # Modem
 vendor/lib/libwms.so
