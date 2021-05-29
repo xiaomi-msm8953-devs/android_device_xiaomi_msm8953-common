@@ -1,4 +1,4 @@
-#
+	#
 # Copyright (C) 2017-2021 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
@@ -271,10 +271,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.bt.sh \
     init.qcom.post_boot.sh
-
-# RenderScript HAL
-PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
 
 # RIL
 PRODUCT_PACKAGES += \
