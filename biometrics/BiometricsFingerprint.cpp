@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_msm8953"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.xiaomi_msm8953"
 
 #include <hardware/hw_auth_token.h>
 
@@ -31,7 +31,7 @@ namespace android {
 namespace hardware {
 namespace biometrics {
 namespace fingerprint {
-namespace V2_1 {
+namespace V2_3 {
 namespace implementation {
 
 // Supported fingerprint HAL version
@@ -233,6 +233,19 @@ Return<RequestStatus> BiometricsFingerprint::authenticate(uint64_t operationId,
     return ErrorFilter(mDevice->authenticate(mDevice, operationId, gid));
 }
 
+Return<bool> BiometricsFingerprint::isUdfps(uint32_t /*sensorId*/) {
+    return false;
+}
+
+Return<void> BiometricsFingerprint::onFingerDown(uint32_t /*x*/, uint32_t /*y*/, float /*minor*/,
+                                                 float /*major*/) {
+    return Void();
+}
+
+Return<void> BiometricsFingerprint::onFingerUp() {
+    return Void();
+}
+
 IBiometricsFingerprint* BiometricsFingerprint::getInstance() {
     if (!sInstance) {
       sInstance = new BiometricsFingerprint();
@@ -384,7 +397,7 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t *msg) {
 }
 
 } // namespace implementation
-}  // namespace V2_1
+}  // namespace V2_3
 }  // namespace fingerprint
 }  // namespace biometrics
 }  // namespace hardware
