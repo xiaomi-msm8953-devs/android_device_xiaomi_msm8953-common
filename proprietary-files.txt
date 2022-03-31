@@ -141,8 +141,8 @@ product/lib64/vendor.qti.hardware.data.connection@1.1.so
 product/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
 product/lib64/vendor.qti.hardware.data.iwlan@1.0.so
 product/lib64/vendor.qti.hardware.data.qmi@1.0.so
--vendor/app/CneApp/CneApp.apk
--vendor/app/IWlanService/IWlanService.apk
+vendor/app/CneApp/CneApp.apk
+vendor/app/IWlanService/IWlanService.apk
 vendor/bin/cnd
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
@@ -222,7 +222,7 @@ product/lib64/libdpmctmgr.so:system_ext/lib64/libdpmctmgr.so
 product/lib64/libdpmfdmgr.so:system_ext/lib64/libdpmfdmgr.so
 product/lib64/libdpmframework.so:system_ext/lib64/libdpmframework.so
 product/lib64/libdpmtcm.so:system_ext/lib64/libdpmtcm.so
--product/priv-app/dpmserviceapp/dpmserviceapp.apk:system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
+product/priv-app/dpmserviceapp/dpmserviceapp.apk:system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
 vendor/lib/com.qualcomm.qti.dpm.api@1.0.so
@@ -251,7 +251,7 @@ vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/slim_daemon
 vendor/bin/xtra-daemon
--vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml
+vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml
 vendor/etc/cacert_location.pem
 vendor/etc/xtra_root_cert.pem
 vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so
@@ -491,8 +491,8 @@ vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
 
 # Radio
--product/app/QtiTelephonyService/QtiTelephonyService.apk:system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
--product/app/embms/embms.apk:system_ext/app/embms/embms.apk
+product/app/QtiTelephonyService/QtiTelephonyService.apk:system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
+product/app/embms/embms.apk:system_ext/app/embms/embms.apk
 product/etc/permissions/embms.xml:system_ext/etc/permissions/embms.xml
 product/etc/permissions/qcrilhook.xml:system_ext/etc/permissions/qcrilhook.xml
 product/etc/permissions/telephonyservice.xml:system_ext/etc/permissions/telephonyservice.xml
@@ -500,7 +500,7 @@ product/framework/QtiTelephonyServicelibrary.jar:system_ext/framework/QtiTelepho
 product/framework/embmslibrary.jar:system_ext/framework/embmslibrary.jar
 product/framework/qcrilhook.jar:system_ext/framework/qcrilhook.jar
 product/framework/qti-telephony-common.jar:system_ext/framework/qti-telephony-common.jar
--product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk:system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk:system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/hw/qcrild
 vendor/bin/ATFWD-daemon
 vendor/bin/netmgrd
@@ -573,8 +573,8 @@ vendor/radio/qcril_database/qcril.db
 
 # Radio - IMS
 etc/permissions/com.qualcomm.qti.imscmservice.xml
--product/app/imssettings/imssettings.apk:system_ext/app/imssettings/imssettings.apk
--product/app/uceShimService/uceShimService.apk:system_ext/app/uceShimService/uceShimService.apk
+product/app/imssettings/imssettings.apk:system_ext/app/imssettings/imssettings.apk
+product/app/uceShimService/uceShimService.apk:system_ext/app/uceShimService/uceShimService.apk
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml
@@ -603,7 +603,7 @@ product/lib64/vendor.qti.ims.callinfo@1.0.so:system_ext/lib64/vendor.qti.ims.cal
 product/lib64/vendor.qti.ims.rcsconfig@1.0.so:system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so
 product/lib64/vendor.qti.imsrtpservice@2.0.so:system_ext/lib64/vendor.qti.imsrtpservice@2.0.so
 product/lib64/vendor.qti.imsrtpservice@2.1.so:system_ext/lib64/vendor.qti.imsrtpservice@2.1.so
--product/priv-app/ims/ims.apk:system_ext/priv-app/ims/ims.apk
+product/priv-app/ims/ims.apk:system_ext/priv-app/ims/ims.apk
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
@@ -667,7 +667,7 @@ vendor/lib64/libthermalfeature.so
 vendor/lib64/libthermalioctl.so
 
 # Time services
--vendor/app/TimeService/TimeService.apk
+vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 -vendor/lib/libtime_genoff.so
@@ -686,7 +686,7 @@ vendor/lib64/vendor.qti.voiceprint@1.0.so
 # Widevine
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine
 vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.2-service.widevine.xml
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.2-service.widevine.xml
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so
