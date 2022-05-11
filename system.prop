@@ -1,6 +1,7 @@
 # Dalvik/ART
 dalvik.vm.dex2oat64.enabled=true
 dalvik.vm.madvise-random=true
+dalvik.vm.systemuicompilerfilter=speed
 
 # Dex
 pm.dexopt.downgrade_after_inactive_days=10
