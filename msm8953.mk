@@ -154,7 +154,7 @@ PRODUCT_PACKAGES += \
 
 # DPM
 PRODUCT_PACKAGES += \
-    libshim_dpmframework
+    libcutils_shim
 
 # DRM
 PRODUCT_PACKAGES += \
