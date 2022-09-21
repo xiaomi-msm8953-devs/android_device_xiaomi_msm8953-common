@@ -222,7 +222,7 @@ PRODUCT_PACKAGES += \
 
 # IMS
 PRODUCT_PACKAGES += \
-    libshim_imsvideocodec \
+    libgui_shim \
     vendor.qti.hardware.camera.device@1.0
 
 # Input
