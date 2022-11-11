@@ -66,7 +66,8 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.primary.msm8953 \
     audio.r_submix.default \
-    audio.usb.default
+    audio.usb.default \
+    sound_trigger.primary.msm8953
 
 PRODUCT_PACKAGES += \
     libaudiopreprocessing \
