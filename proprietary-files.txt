@@ -615,10 +615,6 @@ vendor/lib64/libthermalfeature.so
 vendor/lib64/libthermalioctl.so
 
 # Time services
-vendor/app/TimeService/TimeService.apk
-vendor/bin/time_daemon
-vendor/etc/init/init.time_daemon.rc
-vendor/lib/libtime_genoff.so
 vendor/lib64/libtime_genoff.so
 
 # TUI
