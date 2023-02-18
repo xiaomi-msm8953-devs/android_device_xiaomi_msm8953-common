@@ -19,7 +19,7 @@ OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_AAPT_PREF_CONFIG ?= xxhdpi
 
 # Permissions
 PRODUCT_COPY_FILES += \
