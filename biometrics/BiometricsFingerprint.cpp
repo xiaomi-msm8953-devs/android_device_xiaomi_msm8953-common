@@ -44,6 +44,7 @@ typedef struct hw_module_info {
 
 static const hw_module_info_t kHALModules[] = {
     {FINGERPRINT_HARDWARE_MODULE_ID, "fpc"},
+    {FINGERPRINT_HARDWARE_MODULE_ID, "goodix"},
     {"gf_" FINGERPRINT_HARDWARE_MODULE_ID, "goodix"},
 };
 
