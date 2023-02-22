@@ -10,9 +10,6 @@
 /dev/block/platform/soc/7824900.sdhci/by-name/sbl1             u:object_r:custom_ab_block_device:s0
 /dev/block/platform/soc/7824900.sdhci/by-name/tz             u:object_r:custom_ab_block_device:s0
 
-# Executables
-/system/bin/chargeonlymode			u:object_r:charger_exec:s0
-
 # Fingerprint data
 /dev/socket/fpce(/.*)?                          u:object_r:fingerprint_socket:s0
 /data/fpc(/.*)?                                 u:object_r:fingerprint_data_file:s0
