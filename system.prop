@@ -1,5 +1,6 @@
 # Dex
 pm.dexopt.downgrade_after_inactive_days=10
+pm.dexopt.shared=quicken
 
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
