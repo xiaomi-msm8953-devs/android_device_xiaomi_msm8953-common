@@ -1,3 +1,6 @@
+# Dalvik/ART
+dalvik.vm.madvise-random=true
+
 # Dex
 pm.dexopt.downgrade_after_inactive_days=10
 pm.dexopt.shared=quicken
