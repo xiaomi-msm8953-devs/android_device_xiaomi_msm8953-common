@@ -124,6 +124,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libstdc++_vendor
 
+# Dex
+PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
+
 # Display
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
@@ -336,6 +339,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
+
+# Speed Profiles
+PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
+PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 # Telephony
 PRODUCT_PACKAGES += \
