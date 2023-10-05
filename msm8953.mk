@@ -123,7 +123,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 PRODUCT_PACKAGES += \
-    libstdc++.vendor
+    libstdc++_vendor
 
 # Display
 PRODUCT_PACKAGES += \
