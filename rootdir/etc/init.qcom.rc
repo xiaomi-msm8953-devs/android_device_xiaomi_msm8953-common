@@ -392,6 +392,9 @@ on property:sys.boot_completed=1
     # This initializes vendor.qti.hardware.perf service
     setprop vendor.post_boot.parsed 1
 
+    swapon_all /vendor/etc/fstab.zram
+    write /proc/sys/vm/swappiness 100
+
 on property:persist.vendor.radio.atfwd.start=false
     stop vendor.atfwd
 
