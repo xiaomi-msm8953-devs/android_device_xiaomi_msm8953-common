@@ -105,7 +105,7 @@ vendor/firmware/cpp_firmware_v1_8_0.fw
 system/etc/cne/Nexus/ATT/ATT_profiles.xml
 system/etc/cne/Nexus/ROW/ROW_profiles.xml
 system/etc/cne/Nexus/VZW/VZW_profiles.xml
-vendor/app/CneApp/CneApp.apk
+vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_symlink
 vendor/app/IWlanService/IWlanService.apk
 vendor/bin/cnd
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
