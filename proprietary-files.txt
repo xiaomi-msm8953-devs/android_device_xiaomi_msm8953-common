@@ -384,21 +384,15 @@ vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
 # Postprocessing
-system/etc/permissions/com.qti.snapdragon.sdk.display.xml
-system/framework/com.qti.snapdragon.sdk.display.jar
 vendor/bin/hw/vendor.display.color@1.0-service
-vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
 vendor/bin/mm-pp-dpps
 vendor/etc/init/vendor.display.color@1.0-service.rc
-vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
 vendor/lib/libdisp-aba.so
 vendor/lib/vendor.display.color@1.0.so
 vendor/lib/vendor.display.postproc@1.0.so
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib64/libdisp-aba.so
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.postproc@1.0.so
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # Power-off alarm - from caymanslm
 product/app/PowerOffAlarm/PowerOffAlarm.apk:system_ext/app/PowerOffAlarm/PowerOffAlarm.apk|f0a86fc11b38c059912303857bc4c79155430bcc
