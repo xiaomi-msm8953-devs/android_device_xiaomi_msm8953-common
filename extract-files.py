@@ -42,7 +42,7 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    ('system_ext/etc/init/dpmd.rc', 'system_ext/etc/permissions/com.qti.dpmframework.xml', 'system_ext/etc/permissions/dpmapi.xml', 'system_ext/etc/permissions/embms.xml', 'system_ext/etc/permissions/qcrilhook.xml', 'system_ext/etc/permissions/telephonyservice.xml'): blob_fixup()
+    ('system_ext/etc/init/dpmd.rc', 'system_ext/etc/permissions/com.qti.dpmframework.xml', 'system_ext/etc/permissions/dpmapi.xml', 'system_ext/etc/permissions/qcrilhook.xml', 'system_ext/etc/permissions/telephonyservice.xml'): blob_fixup()
         .regex_replace('/product/', '/system_ext/'),
     ('system_ext/lib/libdpmframework.so', 'system_ext/lib64/libdpmframework.so'): blob_fixup()
         .add_needed('libcutils_shim.so'),
