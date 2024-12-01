@@ -2,35 +2,3 @@ GNSS_CFLAGS = [
     "-Werror",
     "-Wno-undefined-bool-conversion",
 ]
-
-/* Activate the following for regression testing */
-GNSS_SANITIZE = {
-/*
-    address: true,
-    cfi: true,
-    misc_undefined: [
-        "alignment",
-        "bounds",
-        "null",
-        "unreachable",
-        "integer",
-    ],
-*/
-}
-
-/* Activate the following for debug purposes only,
-   comment out for production */
-GNSS_SANITIZE_DIAG = {
-/*
-    diag: {
-        cfi: true,
-        misc_undefined: [
-            "alignment",
-            "bounds",
-            "null",
-            "unreachable",
-            "integer",
-        ],
-    },
-*/
-}
