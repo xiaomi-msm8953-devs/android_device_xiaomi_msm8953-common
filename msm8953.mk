@@ -205,6 +205,11 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# Partitions
+PRODUCT_PACKAGES += \
+    vendor_dsp_mountpoint \
+    vendor_firmware_mnt_mountpoint
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
