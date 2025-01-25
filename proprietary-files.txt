@@ -2,7 +2,7 @@
 # caymanslm: caymanslm-user 12 SKQ1.211103.001 8450120221101 release-keys
 
 # Current blobs with ELF checks disabled:
-# libGLESv1_CM_adreno, libq3dtools_adreno, vulkan.msm8953, libCB, libgsl, librs_adreno depend on NDK libnativewindow and build is unable to resolve its symbols
+# libGLESv1_CM_adreno, libq3dtools_adreno, vulkan.msm8953, libCB, libgsl depend on NDK libnativewindow and build is unable to resolve its symbols
 # libcne, libwqe, imsdatadaemon, lowi-server depend on libwpa_client, which is a gnu makefile target
 # lowi-server depend on libwifi-hal-ctrl, which is a gnu makefile target
 
@@ -263,8 +263,6 @@ vendor/lib/libhdr_tm.so
 vendor/lib/libllvm-glnext.so
 vendor/lib/libllvm-qcom.so
 vendor/lib/libmm-hdcpmgr.so
-vendor/lib/librs_adreno.so;DISABLE_CHECKELF
-vendor/lib/librs_adreno_sha1.so
 vendor/lib64/egl/eglSubDriverAndroid.so
 vendor/lib64/egl/libEGL_adreno.so
 vendor/lib64/egl/libGLESv1_CM_adreno.so;DISABLE_CHECKELF
@@ -283,8 +281,6 @@ vendor/lib64/libhdr_tm.so
 vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 vendor/lib64/libmm-hdcpmgr.so
-vendor/lib64/librs_adreno.so;DISABLE_CHECKELF
-vendor/lib64/librs_adreno_sha1.so
 
 # Graphics (SDM)
 vendor/lib/libscalar.so
