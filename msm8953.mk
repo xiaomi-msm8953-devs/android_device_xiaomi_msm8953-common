@@ -139,6 +139,7 @@ PRODUCT_PACKAGES += \
     FMRadio
 
 $(call soong_config_set_bool,libfmjni,no_fm_firmware,true)
+$(call soong_config_set,libfmjni,vendor,qcom)
 
 # GPS / Location
 PRODUCT_PACKAGES += \
