@@ -138,6 +138,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FMRadio
 
+$(call soong_config_set_bool,libfmjni,no_fm_firmware,true)
+
 # GPS / Location
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.0-impl-qti \
