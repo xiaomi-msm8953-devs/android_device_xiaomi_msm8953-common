@@ -38,7 +38,7 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.qti.imsrtpservice@2.0',
         'vendor.qti.imsrtpservice@2.1',
     ): lib_fixup_vendor_suffix,
-    ('libwpa_client', 'libwifi-hal-ctrl'): lib_fixup_remove,
+    ('libwifi-hal-ctrl'): lib_fixup_remove,
 }
 
 blob_fixups: blob_fixups_user_type = {

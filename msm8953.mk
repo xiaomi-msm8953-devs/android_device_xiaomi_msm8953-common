@@ -305,7 +305,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     libcld80211 \
     libwifi-hal-ctrl \
-    libwpa_client \
     hostapd \
     wificond \
     WifiOverlay \
