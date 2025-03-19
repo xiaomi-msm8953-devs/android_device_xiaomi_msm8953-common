@@ -40,8 +40,6 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    ('system_ext/etc/permissions/qcrilhook.xml', 'system_ext/etc/permissions/telephonyservice.xml'): blob_fixup()
-        .regex_replace('/product/', '/system_ext/'),
     ('system_ext/lib64/lib-imscamera.so', 'system_ext/lib64/lib-imsvideocodec.so'): blob_fixup()
         .add_needed('libgui_shim.so'),
     ('vendor/lib64/mediadrm/libwvdrmengine.so', 'vendor/lib64/libwvhidl.so'): blob_fixup()
