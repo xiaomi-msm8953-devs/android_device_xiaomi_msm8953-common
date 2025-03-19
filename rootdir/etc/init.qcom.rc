@@ -420,18 +420,6 @@ service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     user root
     oneshot
 
-service vendor.rmt_storage /vendor/bin/rmt_storage
-    class core
-    user root
-    shutdown critical
-    ioprio rt 0
-    task_profiles ServiceCapacityLow
-
-service vendor.tftp_server /vendor/bin/tftp_server
-   class core
-   user root
-   task_profiles ServiceCapacityLow
-
 service vendor.sensors.qti /vendor/bin/sensors.qti
     class core
     user system

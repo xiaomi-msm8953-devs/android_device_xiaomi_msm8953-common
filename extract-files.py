@@ -33,15 +33,18 @@ lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
         'com.qualcomm.qti.dpm.api@1.0',
-        'vendor.qti.imsrtpservice@2.0',
-        'vendor.qti.imsrtpservice@2.1',
+        'vendor.qti.imsrtpservice@3.0',
     ): lib_fixup_vendor_suffix,
     ('libwifi-hal-ctrl'): lib_fixup_remove,
 }
 
 blob_fixups: blob_fixups_user_type = {
-    ('system_ext/lib64/lib-imscamera.so', 'system_ext/lib64/lib-imsvideocodec.so'): blob_fixup()
+    'system_ext/lib64/lib-imscamera.so': blob_fixup()
         .add_needed('libgui_shim.so'),
+    'system_ext/lib64/lib-imsvideocodec.so': blob_fixup()
+        .add_needed('libgui_shim.so')
+        .add_needed('libui_shim.so')
+        .replace_needed('libqdMetaData.so', 'libqdMetaData.system.so'),
     ('vendor/lib64/mediadrm/libwvdrmengine.so', 'vendor/lib64/libwvhidl.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
 }  # fmt: skip
