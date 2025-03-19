@@ -33,8 +33,6 @@ lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
         'com.qualcomm.qti.dpm.api@1.0',
-        'vendor.qti.ims.callinfo@1.0',
-        'vendor.qti.ims.rcsconfig@1.0',
         'vendor.qti.imsrtpservice@2.0',
         'vendor.qti.imsrtpservice@2.1',
     ): lib_fixup_vendor_suffix,
@@ -44,14 +42,12 @@ lib_fixups: lib_fixups_user_type = {
 blob_fixups: blob_fixups_user_type = {
     ('system_ext/etc/init/dpmd.rc', 'system_ext/etc/permissions/com.qti.dpmframework.xml', 'system_ext/etc/permissions/dpmapi.xml', 'system_ext/etc/permissions/qcrilhook.xml', 'system_ext/etc/permissions/telephonyservice.xml'): blob_fixup()
         .regex_replace('/product/', '/system_ext/'),
-    ('system_ext/lib/libdpmframework.so', 'system_ext/lib64/libdpmframework.so'): blob_fixup()
+    'system_ext/lib64/libdpmframework.so': blob_fixup()
         .add_needed('libcutils_shim.so'),
     ('system_ext/lib64/lib-imscamera.so', 'system_ext/lib64/lib-imsvideocodec.so'): blob_fixup()
         .add_needed('libgui_shim.so'),
     'vendor/bin/pm-service': blob_fixup()
         .add_needed('libutils-v33.so'),
-    ('vendor/etc/data/dsi_config.xml', 'vendor/etc/data/netmgr_config.xml'): blob_fixup()
-        .fix_xml(),
     ('vendor/lib64/mediadrm/libwvdrmengine.so', 'vendor/lib64/libwvhidl.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
 }  # fmt: skip
