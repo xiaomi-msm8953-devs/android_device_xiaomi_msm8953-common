@@ -348,6 +348,7 @@ vendor/etc/sec_config|38ed44170badad7ae9a05f53223e1addf8780083
 vendor/lib/libdiag.so|0a9a6aa74b1728bfb9c6b3ccd7cf0a5bdbc29434
 vendor/lib/libdsutils.so|60135d6d64ecba72fa0eb637a434578290beaaff
 vendor/lib/libidl.so|dc8d161c035f70e7e6c55461b0238fbe916c5a7d
+vendor/lib/libmdmdetect.so|a2df5e8eba8bd275de62bbb7c0f6af1c78fbc7a0
 vendor/lib/libqcci_legacy.so|fa7f0fe72c0246633d842891bb0187867930f63b
 vendor/lib/libqdi.so|6fbd9d89b27a7f54925a6a174b75dfaab450c59b
 vendor/lib/libqdp.so|9d9058f4761990d09acd5610e281a5cee4bd5e95
@@ -364,6 +365,7 @@ vendor/lib64/libdiag.so|174ff3f940288d2d1503230465dfe917ab9d155b
 vendor/lib64/libdsi_netctrl.so|b622c0ff82676d5e02fb92445c6a030742f0c6c4
 vendor/lib64/libdsutils.so|0b466344eb6628feb1b5aba00d1ef3f680e5aa9a
 vendor/lib64/libidl.so|79ebe1a5b1fb81d9cdc972c71cec2667cdcf6599
+vendor/lib64/libmdmdetect.so|1acafe6bd37e770d97649b703d2b695d790d2191
 vendor/lib64/libminksocket.so|103f45603bef0d1fbf52ccdf8458dd31cabe3945
 vendor/lib64/libqcci_legacy.so|d4643c6a585a62d9249acc841a4137c097299e4c
 vendor/lib64/libqcrildatactl.so|b3dccb609cfdc64b7bc74d9d3204904d8972df4d
@@ -404,10 +406,8 @@ vendor/etc/init/port-bridge.rc|e52d61a0de5e8a3b21bfbfca929e862422645377
 vendor/etc/init/qcrild.rc|17cf4934bf443cf6469d8b3ff622eeb0e4a0aac6
 vendor/etc/init/vendor.qti.rmt_storage.rc|bc212c6353c2ded44ae4d759605fbbe55aa4fa3f
 vendor/etc/init/vendor.qti.tftp.rc|b27f188cbffba470a4510d50e46ff7c8446c22cb
-vendor/lib/libmdmdetect.so|a2df5e8eba8bd275de62bbb7c0f6af1c78fbc7a0
 vendor/lib64/libconfigdb.so|6634f23eebd1156c9053b5a77163ee7a058a1916
 vendor/lib64/liblqe.so|02191d7bfeca08ec8b89550a27bef02c3291609e
-vendor/lib64/libmdmdetect.so|1acafe6bd37e770d97649b703d2b695d790d2191
 vendor/lib64/libnetmgr.so|8d0a3e85a1d535efa22634621c4e4796aea1d642
 vendor/lib64/libnetmgr_common.so|a414ca9603bddd34f1b00d648094782095f98e97
 vendor/lib64/libnetmgr_nr_fusion.so|e40531a6e11af9d4905179ef6174299da99041ca
