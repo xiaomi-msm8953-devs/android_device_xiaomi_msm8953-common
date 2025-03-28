@@ -29,6 +29,7 @@ BOARD_KERNEL_PAGESIZE :=  2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
 TARGET_KERNEL_CONFIG := msm8953-perf_defconfig xiaomi/xiaomi.config
+TARGET_KERNEL_CLANG_VERSION := r530567
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
