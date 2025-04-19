@@ -6,7 +6,7 @@
 
 #include "Lights.h"
 
-#define LOG_TAG "android.hardware.light-service.lineage"
+#define LOG_TAG "android.hardware.light-service.xiaomi_msm8953"
 
 #include <android-base/logging.h>
 #include <android/binder_manager.h>

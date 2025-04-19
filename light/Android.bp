@@ -5,12 +5,12 @@
 //
 
 cc_binary {
-    name: "android.hardware.light-service.lineage",
+    name: "android.hardware.light-service.xiaomi_msm8953",
     defaults: ["hidl_defaults"],
     vendor: true,
     relative_install_path: "hw",
-    init_rc: ["android.hardware.light-service.lineage.rc"],
-    vintf_fragments: ["android.hardware.light-service.lineage.xml"],
+    init_rc: ["android.hardware.light-service.xiaomi_msm8953.rc"],
+    vintf_fragments: ["android.hardware.light-service.xiaomi_msm8953.xml"],
     srcs: [
         "BacklightDevice.cpp",
         "Devices.cpp",
