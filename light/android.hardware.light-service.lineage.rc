@@ -1,0 +1,175 @@
+on early-boot
+    # Backlight devices
+    chown system system /sys/class/backlight/backlight/brightness
+    chown system system /sys/class/backlight/backlight/max_brightness
+
+    chown system system /sys/class/backlight/panel0-backlight/brightness
+    chown system system /sys/class/backlight/panel0-backlight/max_brightness
+
+    chown system system /sys/class/backlight/panel0-backlight-ex/brightness
+    chown system system /sys/class/backlight/panel0-backlight-ex/max_brightness
+
+    chown system system /sys/class/backlight/sprd_backlight/brightness
+    chown system system /sys/class/backlight/sprd_backlight/max_brightness
+
+    # LED devices
+    chown system system /sys/class/leds/blue/blink
+    chown system system /sys/class/leds/blue/breath
+    chown system system /sys/class/leds/blue/brightness
+    chown system system /sys/class/leds/blue/duty_pcts
+    chown system system /sys/class/leds/blue/max_brightness
+    chown system system /sys/class/leds/blue/pause_hi
+    chown system system /sys/class/leds/blue/pause_lo
+    chown system system /sys/class/leds/blue/ramp_step_ms
+    chown system system /sys/class/leds/blue/start_idx
+    chown system system /sys/class/leds/blue/trigger
+
+    chown system system /sys/class/leds/button-backlight/blink
+    chown system system /sys/class/leds/button-backlight/breath
+    chown system system /sys/class/leds/button-backlight/brightness
+    chown system system /sys/class/leds/button-backlight/duty_pcts
+    chown system system /sys/class/leds/button-backlight/max_brightness
+    chown system system /sys/class/leds/button-backlight/pause_hi
+    chown system system /sys/class/leds/button-backlight/pause_lo
+    chown system system /sys/class/leds/button-backlight/ramp_step_ms
+    chown system system /sys/class/leds/button-backlight/start_idx
+    chown system system /sys/class/leds/button-backlight/trigger
+
+    chown system system /sys/class/leds/button-backlight1/blink
+    chown system system /sys/class/leds/button-backlight1/breath
+    chown system system /sys/class/leds/button-backlight1/brightness
+    chown system system /sys/class/leds/button-backlight1/duty_pcts
+    chown system system /sys/class/leds/button-backlight1/max_brightness
+    chown system system /sys/class/leds/button-backlight1/pause_hi
+    chown system system /sys/class/leds/button-backlight1/pause_lo
+    chown system system /sys/class/leds/button-backlight1/ramp_step_ms
+    chown system system /sys/class/leds/button-backlight1/start_idx
+    chown system system /sys/class/leds/button-backlight1/trigger
+
+    chown system system /sys/class/leds/button-backlight2/blink
+    chown system system /sys/class/leds/button-backlight2/breath
+    chown system system /sys/class/leds/button-backlight2/brightness
+    chown system system /sys/class/leds/button-backlight2/duty_pcts
+    chown system system /sys/class/leds/button-backlight2/max_brightness
+    chown system system /sys/class/leds/button-backlight2/pause_hi
+    chown system system /sys/class/leds/button-backlight2/pause_lo
+    chown system system /sys/class/leds/button-backlight2/ramp_step_ms
+    chown system system /sys/class/leds/button-backlight2/start_idx
+    chown system system /sys/class/leds/button-backlight2/trigger
+
+    chown system system /sys/class/leds/charging/blink
+    chown system system /sys/class/leds/charging/brightness
+    chown system system /sys/class/leds/charging/duty_pcts
+    chown system system /sys/class/leds/charging/max_brightness
+    chown system system /sys/class/leds/charging/pause_hi
+    chown system system /sys/class/leds/charging/pause_lo
+    chown system system /sys/class/leds/charging/ramp_step_ms
+    chown system system /sys/class/leds/charging/start_idx
+    chown system system /sys/class/leds/charging/trigger
+
+    chown system system /sys/class/leds/green/blink
+    chown system system /sys/class/leds/green/breath
+    chown system system /sys/class/leds/green/brightness
+    chown system system /sys/class/leds/green/duty_pcts
+    chown system system /sys/class/leds/green/max_brightness
+    chown system system /sys/class/leds/green/pause_hi
+    chown system system /sys/class/leds/green/pause_lo
+    chown system system /sys/class/leds/green/ramp_step_ms
+    chown system system /sys/class/leds/green/start_idx
+    chown system system /sys/class/leds/green/trigger
+
+    chown system system /sys/class/leds/keyboard-backlight/blink
+    chown system system /sys/class/leds/keyboard-backlight/breath
+    chown system system /sys/class/leds/keyboard-backlight/brightness
+    chown system system /sys/class/leds/keyboard-backlight/duty_pcts
+    chown system system /sys/class/leds/keyboard-backlight/max_brightness
+    chown system system /sys/class/leds/keyboard-backlight/pause_hi
+    chown system system /sys/class/leds/keyboard-backlight/pause_lo
+    chown system system /sys/class/leds/keyboard-backlight/ramp_step_ms
+    chown system system /sys/class/leds/keyboard-backlight/start_idx
+    chown system system /sys/class/leds/keyboard-backlight/trigger
+
+    chown system system /sys/class/leds/keyboard-backlight-ap/blink
+    chown system system /sys/class/leds/keyboard-backlight-ap/breath
+    chown system system /sys/class/leds/keyboard-backlight-ap/brightness
+    chown system system /sys/class/leds/keyboard-backlight-ap/duty_pcts
+    chown system system /sys/class/leds/keyboard-backlight-ap/max_brightness
+    chown system system /sys/class/leds/keyboard-backlight-ap/pause_hi
+    chown system system /sys/class/leds/keyboard-backlight-ap/pause_lo
+    chown system system /sys/class/leds/keyboard-backlight-ap/ramp_step_ms
+    chown system system /sys/class/leds/keyboard-backlight-ap/start_idx
+    chown system system /sys/class/leds/keyboard-backlight-ap/trigger
+
+    chown system system /sys/class/leds/lcd-backlight/blink
+    chown system system /sys/class/leds/lcd-backlight/breath
+    chown system system /sys/class/leds/lcd-backlight/brightness
+    chown system system /sys/class/leds/lcd-backlight/duty_pcts
+    chown system system /sys/class/leds/lcd-backlight/max_brightness
+    chown system system /sys/class/leds/lcd-backlight/pause_hi
+    chown system system /sys/class/leds/lcd-backlight/pause_lo
+    chown system system /sys/class/leds/lcd-backlight/ramp_step_ms
+    chown system system /sys/class/leds/lcd-backlight/start_idx
+    chown system system /sys/class/leds/lcd-backlight/trigger
+
+    chown system system /sys/class/leds/lcd-backlight-ex/blink
+    chown system system /sys/class/leds/lcd-backlight-ex/breath
+    chown system system /sys/class/leds/lcd-backlight-ex/brightness
+    chown system system /sys/class/leds/lcd-backlight-ex/duty_pcts
+    chown system system /sys/class/leds/lcd-backlight-ex/max_brightness
+    chown system system /sys/class/leds/lcd-backlight-ex/pause_hi
+    chown system system /sys/class/leds/lcd-backlight-ex/pause_lo
+    chown system system /sys/class/leds/lcd-backlight-ex/ramp_step_ms
+    chown system system /sys/class/leds/lcd-backlight-ex/start_idx
+    chown system system /sys/class/leds/lcd-backlight-ex/trigger
+
+    chown system system /sys/class/leds/lcd_backlight0/blink
+    chown system system /sys/class/leds/lcd_backlight0/breath
+    chown system system /sys/class/leds/lcd_backlight0/brightness
+    chown system system /sys/class/leds/lcd_backlight0/duty_pcts
+    chown system system /sys/class/leds/lcd_backlight0/max_brightness
+    chown system system /sys/class/leds/lcd_backlight0/pause_hi
+    chown system system /sys/class/leds/lcd_backlight0/pause_lo
+    chown system system /sys/class/leds/lcd_backlight0/ramp_step_ms
+    chown system system /sys/class/leds/lcd_backlight0/start_idx
+    chown system system /sys/class/leds/lcd_backlight0/trigger
+
+    chown system system /sys/class/leds/left/blink
+    chown system system /sys/class/leds/left/breath
+    chown system system /sys/class/leds/left/brightness
+    chown system system /sys/class/leds/left/duty_pcts
+    chown system system /sys/class/leds/left/max_brightness
+    chown system system /sys/class/leds/left/pause_hi
+    chown system system /sys/class/leds/left/pause_lo
+    chown system system /sys/class/leds/left/ramp_step_ms
+    chown system system /sys/class/leds/left/start_idx
+    chown system system /sys/class/leds/left/trigger
+
+    chown system system /sys/class/leds/red/blink
+    chown system system /sys/class/leds/red/breath
+    chown system system /sys/class/leds/red/brightness
+    chown system system /sys/class/leds/red/duty_pcts
+    chown system system /sys/class/leds/red/max_brightness
+    chown system system /sys/class/leds/red/pause_hi
+    chown system system /sys/class/leds/red/pause_lo
+    chown system system /sys/class/leds/red/ramp_step_ms
+    chown system system /sys/class/leds/red/start_idx
+    chown system system /sys/class/leds/red/trigger
+
+    chown system system /sys/class/leds/rgb/rgb_blink
+
+    chown system system /sys/class/leds/white/blink
+    chown system system /sys/class/leds/white/breath
+    chown system system /sys/class/leds/white/brightness
+    chown system system /sys/class/leds/white/duty_pcts
+    chown system system /sys/class/leds/white/max_brightness
+    chown system system /sys/class/leds/white/pause_hi
+    chown system system /sys/class/leds/white/pause_lo
+    chown system system /sys/class/leds/white/ramp_step_ms
+    chown system system /sys/class/leds/white/start_idx
+    chown system system /sys/class/leds/white/trigger
+
+service vendor.light-default /vendor/bin/hw/android.hardware.light-service.lineage
+    class hal
+    user system
+    group system
+    shutdown critical
