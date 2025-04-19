@@ -186,7 +186,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.lineage
+    android.hardware.light-service.xiaomi_msm8953
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
